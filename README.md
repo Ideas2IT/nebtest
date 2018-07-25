@@ -10,7 +10,7 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
 # Pre-requisites
 
-* node >= 8.10.3
+* node >= 8.10.3 [(Download the latest node version here)](https://nodejs.org/en/download/)
 
 # Methods
 
