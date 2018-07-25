@@ -1,0 +1,4 @@
+node_modules
+test/contracts
+src/lib
+test/testCases.js

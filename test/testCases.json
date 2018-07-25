@@ -1,0 +1,74 @@
+[
+  {
+    "name":"Positive Flow - Save Amount And Check Balance",
+    "data":[
+      {
+        "name":"Save Amount",
+        "testInput":{
+          "func":"save",
+          "args":"[0]",
+          "value":100,
+          "type":"write"
+        },
+        "testExpect":{
+
+        }
+      },
+      {
+        "name":"Take saved amount",
+        "testInput":{
+          "func":"takeout",
+          "args":"[50]",
+          "value":0,
+          "type":"write"
+        },
+        "testExpect":{
+
+        }
+      },
+      {
+        "name":"Balance should be 50",
+        "testInput":{
+          "func":"balanceOf",
+          "args":"[]",
+          "value":0,
+          "type":"read"
+        },
+        "testExpect":{
+          "canCheck":true,
+          "balance":50
+        }
+      }
+    ]
+},
+{
+    "name":"Negative Case - Takout > Saved Amount",
+    "data":[
+      {
+        "name":"Save Amount",
+        "testInput":{
+          "func":"save",
+          "args":"[0]",
+          "value":100,
+          "type":"write"
+        },
+        "testExpect":{
+
+        }
+      },
+      {
+        "name":"Insufficient Balance",
+        "testInput":{
+          "func":"save",
+          "args":"[500]",
+          "value":0,
+          "type":"write"
+        },
+        "testExpect":{
+          "hasError":true,
+          "errorMsg":"Insufficient balance."
+        }
+      }
+    ]
+  }
+]

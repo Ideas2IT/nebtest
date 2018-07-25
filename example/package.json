@@ -1,0 +1,21 @@
+{
+  "name": "nebtest-example",
+  "version": "1.0.0",
+  "description": "Example for nebtest",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 600000"
+  },
+  "keywords": [
+    "nebtest",
+    "nebtest",
+    "example"
+  ],
+  "author": "scsiva1991",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nebtest": "^1.0.0"
+  }
+}
