@@ -29,7 +29,7 @@ NebTest will let you to test your nebulas smart contracts just like you write un
   npm install --save mocha chai
 
 2. **Include nebtest to your test case**  
-  const Nebtest = require('Nebtest');
+  const Nebtest = require('nebtest');
 
 3. **Export variables**  
     export ENVIRONMENT='testnet'  
