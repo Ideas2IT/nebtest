@@ -7,10 +7,22 @@
     "lint": "eslint .",
     "test": "mocha --timeout 600000"
   },
+  "author": "Ideas2it",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sivai2i/nebtest.git"
+    "url": "git+https://github.com/Ideas2IT/nebtest.git"
   },
+  "keywords": [
+    "blockchain",
+    "nebulas",
+    "nebulas test automation",
+    "nebtestkit"
+  ],
+  "bugs": {
+    "url": "https://github.com/Ideas2IT/nebtest/issues"
+  },
+  "homepage": "https://github.com/Ideas2IT/nebtest",
   "dependencies": {
     "chai": "^4.1.2",
     "extend": "^3.0.1",

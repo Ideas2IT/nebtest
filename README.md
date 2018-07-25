@@ -42,7 +42,13 @@ NebTest will let you to test your nebulas smart contracts just like you write un
         test/contracts/contractFile.js
     ```
 
-5. **Test data - sample format**
+5. **Test data**  
+    Place your test data in test directory
+    ```
+        test/testCases.json
+    ```
+
+6. **Test data - sample format**
     ```
     const testData = [
       {
@@ -67,3 +73,9 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
 **Test Result**  
   <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/example.png" />
+
+# Resources
+
+  [Steps for creating nebulas web wallet](https://medium.com/nebulasio/creating-a-nas-wallet-9d01b5fa2df6)
+
+  [To claim free nebulas tokens](https://testnet.nebulas.io/claim/https://testnet.nebulas.io/claim/)
