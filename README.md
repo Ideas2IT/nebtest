@@ -72,7 +72,7 @@ NebTest will let you to test your nebulas smart contracts just like you write un
     ```
     "scripts": {
       ...
-      "test": "mocha --timeout 600000"
+      "test": "mocha --timeout 600000" //Timeout as per your contract
     }
     ```
     Run the test as,
