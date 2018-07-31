@@ -32,6 +32,15 @@ NebTest will let you to test your nebulas smart contracts just like you write un
   const Nebtest = require('nebtest');
 
 3. **Export variables**  
+
+    Download and follow the instructions to create a web-wallet [https://github.com/nebulasio/web-wallet](https://github.com/nebulasio/web-wallet)  
+
+    Create a wallet 
+    <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/web-wallet.png" />
+
+    From the wallet info, you will get the wallet details
+    <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/wallet-info.png" />
+
     export ENVIRONMENT='testnet'  
     export SOURCEACCOUNT='wallet private key'  
     export COINBASE='wallet address'
@@ -68,11 +77,12 @@ NebTest will let you to test your nebulas smart contracts just like you write un
     ```
 7. **Run test**
 
-    Add following command to scripts
+    Add following command to scripts. The timeout is based on the mining time of the contract you are running. Increase the timeout if you are getting the timeout error.
+    
     ```
     "scripts": {
       ...
-      "test": "mocha --timeout 600000" //Timeout as per your contract
+      "test": "mocha --timeout 600000"
     }
     ```
     Run the test as,
