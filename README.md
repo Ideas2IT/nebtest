@@ -37,11 +37,11 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
     Create a wallet  
 
-    <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/web-wallet.png" />
+    <img src="https://raw.githubusercontent.com/Ideas2IT/nebtest/master/screenshot/web-wallet.png" />
 
     From the wallet info, you will get the wallet details  
 
-    <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/wallet-info.png" />
+    <img src="https://raw.githubusercontent.com/Ideas2IT/nebtest/master/screenshot/wallet-info.png" />
 
     export ENVIRONMENT='testnet'  
     export SOURCEACCOUNT='wallet private key'  
@@ -101,7 +101,7 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
 # Example
 
-  Check here for a complete [example](https://github.com/sivai2i/nebtest/tree/master/example)
+  Check here for a complete [example](https://github.com/Ideas2IT/nebtest/tree/master/example)
 
 # Resources
 

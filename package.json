@@ -1,6 +1,6 @@
 {
   "name": "nebtest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/Nebtest.js",
   "scripts": {
     "lint": "eslint .",
