@@ -35,10 +35,12 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
     Download and follow the instructions to create a web-wallet [https://github.com/nebulasio/web-wallet](https://github.com/nebulasio/web-wallet)  
 
-    Create a wallet 
+    Create a wallet  
+
     <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/web-wallet.png" />
 
-    From the wallet info, you will get the wallet details
+    From the wallet info, you will get the wallet details  
+
     <img src="https://github.com/Ideas2IT/nebtest/blob/master/screenshot/wallet-info.png" />
 
     export ENVIRONMENT='testnet'  
@@ -75,10 +77,16 @@ NebTest will let you to test your nebulas smart contracts just like you write un
         ]
       }
     ```
-7. **Run test**
+7. **Test Cases**  
+    Write your test cases in
+    ```
+        test/test.js
+    ```
+
+8. **Run test**
 
     Add following command to scripts. The timeout is based on the mining time of the contract you are running. Increase the timeout if you are getting the timeout error.
-    
+
     ```
     "scripts": {
       ...
