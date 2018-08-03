@@ -1,12 +1,12 @@
 # Nebtest
 
-NebTest will let you to test your nebulas smart contracts just like you write unit test for any javascript applications.
+NebTest will automate unit testing of nebulas smart contracts.
 
 # Features
 
-* You can configure for testing in your testnet / mainnet.
-* Run test case with multiple test data at a time using json. 
-* Will deploy a smart contract before each test case to run your test case in clean state.
+* With NebTest, we can automate smart contract testing on both testnet and mainnet.
+* Run test case with multiple test data sets at a time.
+* Run test cases in clean state, by deploying a smart contract before each test case.
 
 # Pre-requisites
 
@@ -103,6 +103,10 @@ NebTest will let you to test your nebulas smart contracts just like you write un
 
   Check here for a complete [example](https://github.com/Ideas2IT/nebtest/tree/master/example)
 
+  **Test Result**  
+
+  <img src="https://raw.githubusercontent.com/Ideas2IT/nebtest/master/screenshot/example.png" />
+  
 # Resources
 
   [Steps for creating nebulas web wallet](https://medium.com/nebulasio/creating-a-nas-wallet-9d01b5fa2df6)
