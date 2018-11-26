@@ -17,16 +17,19 @@ class Nebtest {
     this.chainId = testConfig.chainId;
     this.sourceAccount = new Wallet.Account(testConfig.sourceAccount);
     this.coinBase = testConfig.coinbase;
-    this.from = '';
     this.contractAddr = '';
     this.delayTime = 5000;
+    const account = this.account.NewAccount();
+    this.from = account.fromKey(testConfig.keyStore, testConfig.passphrase, true);
   }
 
   /**
    * Create a new account
    */
   createNewAccount() {
-    this.from = this.account.NewAccount();
+    const account = this.account.NewAccount();
+    account.fromKey(testConfig.keyStore, testConfig.passphrase, true);
+    this.from = account;
     return this.from;
   }
 
@@ -91,15 +94,17 @@ class Nebtest {
    * Deploy smart contract file
    * @param {string} fileName
    */
-  async deployContract(fileName) {
+  async deployContract(fileName, args) {
     const accountRes = await this.getAccountState(this.from.getAddressString());
-    const fullPath = path.join(__dirname, '../test/contracts/', fileName);
+    const fullPath = path.join(process.env.PWD, '/test/contracts/', fileName);
     const contractFile = FS.readFileSync(fullPath, 'utf-8');
     const contract = {
       source: contractFile,
       sourceType: 'js',
-      args: JSON.stringify([`${this.from.getAddressString()}`]),
     };
+    if (args && args instanceof Array && args.length > 0) {
+      contract[args] = JSON.stringify(args);
+    }
     const tx = new this.Transaction(this.chainId, this.from, this.from, 0,
       parseInt(accountRes.nonce, 10) + 1, testConfig.gasPrice, testConfig.gasLimit, contract);
     tx.signTransaction();
